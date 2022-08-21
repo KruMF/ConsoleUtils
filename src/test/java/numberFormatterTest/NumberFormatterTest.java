@@ -5,20 +5,20 @@ import consoleUtils.ConsoleBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import static consoleUtils.ConsoleUtils.*;
+import static consoleUtils.ConsoleUtils.separatorString;
 import static consoleUtils.NumberFormatter.doubleToString;
 
 /**
- * Testing text formatting.
+ * Testing text formatter with console buffer.
  */
 public class NumberFormatterTest {
-    private static final String TEST_NAME = "Number formatter test:";
+    private static final String TEST_NAME = "Number formatter test";
 
     private static ConsoleBuffer consoleBuffer = new ConsoleBuffer() {
         @Override
         public List<String> header() {
             return new ArrayList<>() {{
-                add(TEST_NAME);
+                add(TEST_NAME + ":");
                 add(null);
             }};
         }

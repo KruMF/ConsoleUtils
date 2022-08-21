@@ -2,11 +2,22 @@ package consoleUtils;
 
 import java.text.DecimalFormat;
 
-//TODO: add javadoc
+/**
+ * A number formatter for rounding doubles.
+ */
 public class NumberFormatter {
     private static final String
             NUMBER_SYMBOL = "#",
             DECIMAL_SEPARATOR = ".";
+
+    /**
+     * Converts a double to String by rounding to defined decimal places.
+     *
+     * @param d A double to convert.
+     * @param decimalPlaces Decimal places.
+     *
+     * @return Rounded number, as String.
+     */
     public static String doubleToString(double d, int decimalPlaces) {
         return getDecimalFormat(decimalPlaces).format(d);
     }
