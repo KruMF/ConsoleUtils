@@ -7,14 +7,15 @@ by [Krumuvecis](https://github.com/Krumuvecis)
 
 ## Abstract
 
-Common methods for printing stuff in console.
+Common methods and classes for printing stuff in console:
 * ConsoleUtils
+* ConsoleBuffer
 * NumberFormatter
 
 
 ## Requirements
 
 * JDK: 18
-* Maven compiler: 18
-* Maven Surefire: 3.0.0-M7
-* jetbrains annotations: 23.0.0
+* Maven compiler (source & target) : 18
+* [Maven Surefire Plugin](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin) : 3.0.0-M7
+* [JetBrains Java Annotations](https://mvnrepository.com/artifact/org.jetbrains/annotations) : 23.0.0
