@@ -1,19 +1,24 @@
 package consoleUtils;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Objects;
 
 import static consoleUtils.ConsoleUtils.printLine;
 
 import org.jetbrains.annotations.Nullable;
 
-//TODO: add javadoc
+/**
+ * An abstract console buffer.
+ * TODO: finish this javadoc
+ */
 abstract class AbstractConsoleBuffer {
     private static final String BLANK_LINE = "";
     private List<String> lines;
 
-    //TODO: add javadoc
+    /**
+     * Creates a new AbstractConsoleBuffer object.
+     */
     protected AbstractConsoleBuffer() {
         prepareNewCycle();
     }
@@ -23,15 +28,28 @@ abstract class AbstractConsoleBuffer {
         addLines(header());
     }
 
-    //TODO: add javadoc
+    /**
+     * Header to be prepended at the beginning of each cycle.
+     * Override this to add a header.
+     *
+     * @return Header as a list of lines.
+     */
     public @Nullable abstract List<String> header();
 
-    //TODO: add javadoc
+    /**
+     * Adds a line to the buffer.
+     *
+     * @param line Line to add.
+     */
     public void addLine(@Nullable String line) {
         lines.add(Objects.requireNonNullElse(line, BLANK_LINE));
     }
 
-    //TODO: add javadoc
+    /**
+     * Adds a list of lines to the buffer.
+     *
+     * @param lines List of lines to add.
+     */
     public void addLines(@Nullable List<String> lines) {
         List<String> nonNullLines = Objects.requireNonNullElse(lines, new ArrayList<String>());
         for (String line : nonNullLines) {
@@ -39,10 +57,17 @@ abstract class AbstractConsoleBuffer {
         }
     }
 
-    //TODO: add javadoc
+    /**
+     * Footer to be appended at the end of each cycle.
+     * Override this to add a footer.
+     *
+     * @return Footer as a list of lines.
+     */
     public @Nullable abstract List<String> footer();
 
-    //TODO: add javadoc
+    /**
+     * Prints contents to console and prepares for a new cycle.
+     */
     public void print() {
         addLines(footer());
         printLines();

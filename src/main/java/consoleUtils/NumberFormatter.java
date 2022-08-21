@@ -16,7 +16,7 @@ public class NumberFormatter {
      * @param d A double to convert.
      * @param decimalPlaces Decimal places.
      *
-     * @return Rounded number, as String.
+     * @return Rounded number as a String.
      */
     public static String doubleToString(double d, int decimalPlaces) {
         return getDecimalFormat(decimalPlaces).format(d);
