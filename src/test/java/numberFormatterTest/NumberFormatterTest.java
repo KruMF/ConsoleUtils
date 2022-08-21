@@ -2,8 +2,8 @@ package numberFormatterTest;
 
 import consoleUtils.ConsoleBuffer;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 import static consoleUtils.ConsoleUtils.separatorString;
 import static consoleUtils.NumberFormatter.doubleToString;
