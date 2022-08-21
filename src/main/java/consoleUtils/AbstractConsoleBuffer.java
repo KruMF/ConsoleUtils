@@ -9,8 +9,7 @@ import static consoleUtils.ConsoleUtils.printLine;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * An abstract console buffer.
- * TODO: finish this javadoc
+ * An abstract console buffer for printing lines to console synchronously.
  */
 abstract class AbstractConsoleBuffer {
     private static final String BLANK_LINE = "";

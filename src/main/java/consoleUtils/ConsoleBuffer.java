@@ -5,8 +5,7 @@ import java.util.List;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A console buffer.
- * TODO: finish this javadoc
+ * A console buffer for printing lines to console synchronously.
  */
 public class ConsoleBuffer extends AbstractConsoleBuffer {
 
