@@ -18,6 +18,7 @@ public class ConsoleUtils {
     /**
      * Prints a separator to console.
      */
+    @SuppressWarnings("unused")
     public static void printSeparator() {
         printLine(separatorString());
     }

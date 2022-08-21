@@ -35,6 +35,7 @@ public class NumberFormatterTest {
      *
      * @param args Command-line arguments.
      */
+    @SuppressWarnings("unused")
     public static void main(String[] args) {
         addLine(doubleToString(d1,2));
         addLine(doubleToString(d1,3));

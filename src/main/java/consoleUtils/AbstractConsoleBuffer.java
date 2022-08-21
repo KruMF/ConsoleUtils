@@ -50,7 +50,7 @@ abstract class AbstractConsoleBuffer {
      * @param lines List of lines to add.
      */
     public void addLines(@Nullable List<String> lines) {
-        List<String> nonNullLines = Objects.requireNonNullElse(lines, new ArrayList<String>());
+        List<String> nonNullLines = Objects.requireNonNullElse(lines, new ArrayList<>());
         for (String line : nonNullLines) {
             addLine(line);
         }
@@ -62,6 +62,7 @@ abstract class AbstractConsoleBuffer {
      *
      * @return Footer as a list of lines.
      */
+    @SuppressWarnings("SameReturnValue")
     public @Nullable abstract List<String> footer();
 
     /**
