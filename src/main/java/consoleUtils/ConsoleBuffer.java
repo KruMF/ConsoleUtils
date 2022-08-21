@@ -4,38 +4,64 @@ import java.util.List;
 
 import org.jetbrains.annotations.Nullable;
 
-//TODO: add javadoc
+/**
+ * A console buffer.
+ * TODO: finish this javadoc
+ */
 public class ConsoleBuffer extends AbstractConsoleBuffer {
-    //TODO: add javadoc
+
+    /**
+     * Creates a new ConsoleBuffer object.
+     */
     public ConsoleBuffer() {
         super();
     }
 
-    //TODO: add javadoc
+    /**
+     * Header to be prepended at the beginning of each cycle.
+     * Override this to add a header.
+     *
+     * @return Header as a list of lines.
+     */
     @Override
     public @Nullable List<String> header() {
         return null;
     }
 
-    //TODO: add javadoc
+    /**
+     * Adds a line to the buffer.
+     *
+     * @param line Line to add.
+     */
     @Override
     public final void addLine(@Nullable String line) {
         super.addLine(line);
     }
 
-    //TODO: add javadoc
+    /**
+     * Adds a list of lines to the buffer.
+     *
+     * @param lines List of lines to add.
+     */
     @Override
     public final void addLines(@Nullable List<String> lines) {
         super.addLines(lines);
     }
 
-    //TODO: add javadoc
+    /**
+     * Footer to be appended at the end of each cycle.
+     * Override this to add a footer.
+     *
+     * @return Footer as a list of lines.
+     */
     @Override
     public @Nullable List<String> footer() {
         return null;
     }
 
-    //TODO: add javadoc
+    /**
+     * Prints contents to console and prepares for a new cycle.
+     */
     @Override
     public final void print() {
         super.print();
