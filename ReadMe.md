@@ -7,8 +7,9 @@ by [Krumuvecis](https://github.com/Krumuvecis)
 
 ## Abstract
 
-Common methods for printing stuff in console.
+Common methods and classes for printing stuff in console:
 * ConsoleUtils
+* ConsoleBuffer
 * NumberFormatter
 
 
