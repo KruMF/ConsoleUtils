@@ -14,7 +14,7 @@ import static consoleUtils.NumberFormatter.doubleToString;
 public class NumberFormatterTest {
     private static final String TEST_NAME = "Number formatter test";
 
-    private static ConsoleBuffer consoleBuffer = new ConsoleBuffer() {
+    private static final ConsoleBuffer consoleBuffer = new ConsoleBuffer() {
         @Override
         public List<String> header() {
             return new ArrayList<>() {{
