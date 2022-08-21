@@ -1,8 +1,8 @@
 package consoleUtils;
 
-import java.text.DecimalFormat;
 import java.util.Objects;
 
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class ConsoleUtils {
@@ -18,7 +18,13 @@ public class ConsoleUtils {
     /**
      * Prints a separator to console.
      */
-    public static void separator() {
-        printLine("-".repeat(12));
+    public static void printSeparator() {
+        printLine(separatorString());
+    }
+
+    public static @NotNull String separatorString() {
+        String separatorPattern = "-";
+        int separatorLength = 12;
+        return separatorPattern.repeat(separatorLength);
     }
 }

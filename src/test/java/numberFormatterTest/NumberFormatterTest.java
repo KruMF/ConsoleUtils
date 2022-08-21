@@ -22,10 +22,10 @@ public class NumberFormatterTest {
         printLine(doubleToString(d1,2));
         printLine(doubleToString(d1,3));
         printLine(doubleToString(d1,4));
-        separator();
+        printSeparator();
         printLine(doubleToString(d2,0));
         printLine(doubleToString(d2,4));
-        separator();
+        printSeparator();
         printLine(doubleToString(d3,0));
         printLine(doubleToString(d3,2));
     }
