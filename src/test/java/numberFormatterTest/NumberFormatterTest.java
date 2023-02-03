@@ -1,12 +1,14 @@
 package numberFormatterTest;
 
-import consoleUtils.ConsoleBuffer;
-
 import java.util.List;
 import java.util.ArrayList;
 
-import static consoleUtils.ConsoleUtils.separatorString;
-import static consoleUtils.NumberFormatter.doubleToString;
+import org.jetbrains.annotations.NotNull;
+
+import static consoleUtils.stringTools.NumberFormatter.doubleToString;
+
+import consoleUtils.stringTools.SeparatorString;
+import consoleUtils.ConsoleBuffer;
 
 /**
  * Testing text formatter with console buffer.
@@ -37,15 +39,18 @@ public class NumberFormatterTest {
      */
     @SuppressWarnings("unused")
     public static void main(String[] args) {
+        @NotNull SeparatorString separator = new SeparatorString();
+
         addLine(doubleToString(d1,2));
         addLine(doubleToString(d1,3));
         addLine(doubleToString(d1,4));
-        addLine(separatorString());
+        addLine(separator.getString());
         addLine(doubleToString(d2,0));
         addLine(doubleToString(d2,4));
-        addLine(separatorString());
+        addLine(separator.getString());
         addLine(doubleToString(d3,0));
         addLine(doubleToString(d3,2));
+
         consoleBuffer.print();
     }
 

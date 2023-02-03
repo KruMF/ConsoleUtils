@@ -43,7 +43,7 @@ public class SeparatorString {
         return assembleString(null, DEFAULT_LENGTH);
     }
 
-    private static String assembleString(@Nullable String pattern, int length) {
+    private static @NotNull String assembleString(@Nullable String pattern, int length) {
         return (Objects.requireNonNullElse(pattern, DEFAULT_PATTERN)).repeat(Math.max(0, length));
     }
 

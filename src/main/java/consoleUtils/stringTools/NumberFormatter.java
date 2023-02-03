@@ -1,12 +1,14 @@
-package consoleUtils;
+package consoleUtils.stringTools;
 
 import java.text.DecimalFormat;
+
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A number formatter for rounding doubles.
  */
 public class NumberFormatter {
-    private static final String
+    private static final @NotNull String
             NUMBER_SYMBOL = "#",
             DECIMAL_SEPARATOR = ".";
 
@@ -18,12 +20,12 @@ public class NumberFormatter {
      *
      * @return Rounded number as a String.
      */
-    public static String doubleToString(double d, int decimalPlaces) {
+    public static @NotNull String doubleToString(double d, int decimalPlaces) {
         return getDecimalFormat(decimalPlaces).format(d);
     }
 
-    private static DecimalFormat getDecimalFormat(int decimalPlaces) {
-        StringBuilder formatStringBuilder = new StringBuilder(NUMBER_SYMBOL);
+    private static @NotNull DecimalFormat getDecimalFormat(int decimalPlaces) {
+        @NotNull StringBuilder formatStringBuilder = new StringBuilder(NUMBER_SYMBOL);
         if (decimalPlaces > 0) {
             formatStringBuilder.append(DECIMAL_SEPARATOR);
             formatStringBuilder.append(NUMBER_SYMBOL.repeat(decimalPlaces));
