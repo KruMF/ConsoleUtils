@@ -16,6 +16,17 @@ Common methods and classes for printing stuff in console:
 ## Requirements
 
 * JDK: 18
-* Maven compiler (source & target) : 18
-* [Maven Surefire Plugin](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin) : 3.0.0-M7
-* [JetBrains Java Annotations](https://mvnrepository.com/artifact/org.jetbrains/annotations) : 23.0.0
+* Maven compiler: 18
+* [JetBrains Java Annotations](https://mvnrepository.com/artifact/org.jetbrains/annotations) : 24.0.0
+
+
+## Functionality
+
+_instructions coming soon..._
+
+
+## Notes
+
+Strongly recommended to use the latest release.
+
+Releases available [here](https://github.com/KruMF/ConsoleUtils/releases).
