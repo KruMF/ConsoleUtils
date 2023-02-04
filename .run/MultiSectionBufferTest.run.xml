@@ -7,6 +7,10 @@
         <option name="PATTERN" value="bufferedPrintingTests.MultiSectionBufferTest" />
         <option name="ENABLED" value="true" />
       </pattern>
+      <pattern>
+        <option name="PATTERN" value="bufferedPrintingTests.sections.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
     </extension>
     <method v="2">
       <option name="Make" enabled="true" />
