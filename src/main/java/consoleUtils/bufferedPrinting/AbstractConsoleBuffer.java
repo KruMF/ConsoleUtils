@@ -19,7 +19,11 @@ public abstract class AbstractConsoleBuffer {
         sections = new ArrayList<>();
     }
 
-    //TODO: add javadoc
+    /**
+     * Adds a BufferSection object to this console buffer.
+     *
+     * @param section Buffer section to add.
+     */
     public final void addSection(@Nullable BufferSection section) {
         sections.add(section);
     }
