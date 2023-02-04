@@ -8,6 +8,10 @@
         <option name="ENABLED" value="true" />
       </pattern>
       <pattern>
+        <option name="PATTERN" value="bufferedPrintingTests.AbstractBufferTest" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+      <pattern>
         <option name="PATTERN" value="bufferedPrintingTests.sections.*" />
         <option name="ENABLED" value="true" />
       </pattern>

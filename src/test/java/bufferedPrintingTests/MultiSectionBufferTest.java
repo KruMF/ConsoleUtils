@@ -14,12 +14,8 @@ import bufferedPrintingTests.sections.*;
 
 /**
  * Testing multi-section console buffer.
- * TODO: finish this
  */
-public class MultiSectionBufferTest {
-    private static final int
-            SECTION_LENGTH = 3,
-            NUMBER_OF_TEST_CYCLES = 3;
+public class MultiSectionBufferTest extends AbstractBufferTest {
     private static final @Nullable BufferSection @NotNull []
             TEST_SECTION_ARRAY = getTestSectionArray();
     private static final @NotNull List<@Nullable BufferSection>
@@ -33,18 +29,18 @@ public class MultiSectionBufferTest {
      */
     public static void main(String[] args) {
         printLine("Testing section array:");
-        testBuffer(new MultiSectionConsoleBuffer(TEST_SECTION_ARRAY));
+        new MultiSectionBufferTest(new MultiSectionConsoleBuffer(TEST_SECTION_ARRAY));
         printLine("Testing section list:");
-        testBuffer(new MultiSectionConsoleBuffer(TEST_SECTION_LIST));
+        new MultiSectionBufferTest(new MultiSectionConsoleBuffer(TEST_SECTION_LIST));
     }
 
     private static @Nullable BufferSection @NotNull [] getTestSectionArray() {
         return new BufferSection[] {
-                new TestSection(TestSectionType.LINE_BY_LINE, SECTION_LENGTH),
-                new TestSection(TestSectionType.LINE_ARRAY, SECTION_LENGTH),
-                new TestSection(TestSectionType.LINE_LIST, SECTION_LENGTH),
-                new TestSection(TestSectionType.EMPTY, SECTION_LENGTH),
-                null
+                getTestSection(TestSectionType.LINE_BY_LINE),
+                getTestSection(TestSectionType.LINE_ARRAY),
+                getTestSection(TestSectionType.LINE_LIST),
+                getTestSection(TestSectionType.EMPTY),
+                getTestSection(null),
         };
     }
 
@@ -52,9 +48,7 @@ public class MultiSectionBufferTest {
         return Arrays.asList(TEST_SECTION_ARRAY);
     }
 
-    private static void testBuffer(@NotNull MultiSectionConsoleBuffer buffer) {
-        for (int i = 0; i < NUMBER_OF_TEST_CYCLES; i++) {
-            buffer.print();
-        }
+    private MultiSectionBufferTest(@NotNull MultiSectionConsoleBuffer buffer) {
+        super(buffer);
     }
 }
