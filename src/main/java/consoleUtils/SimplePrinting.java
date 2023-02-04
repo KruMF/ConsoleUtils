@@ -6,7 +6,9 @@ import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-//TODO: add javadocs
+/**
+ * A class containing common static console-printing methods.
+ */
 public class SimplePrinting {
     private static final @NotNull String NON_NULL_STRING = "";
 
@@ -19,7 +21,11 @@ public class SimplePrinting {
         System.out.println(Objects.requireNonNullElse(line, NON_NULL_STRING));
     }
 
-    //TODO: add javadoc
+    /**
+     * Prints an array of lines to console.
+     *
+     * @param lines Lines to print. (Null - doesn't print)
+     */
     public static void printLineArray(@Nullable String @Nullable [] lines) {
         if (lines != null) {
             for (@Nullable String line : lines) {
@@ -28,7 +34,11 @@ public class SimplePrinting {
         }
     }
 
-    //TODO: add javadoc
+    /**
+     * Prints a list of lines to console.
+     *
+     * @param lines Lines to print. (Null - doesn't print)
+     */
     public static void printLineList(@Nullable List<@Nullable String> lines) {
         if (lines != null) {
             for (@Nullable String line : lines) {
