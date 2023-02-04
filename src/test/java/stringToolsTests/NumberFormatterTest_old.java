@@ -1,18 +1,10 @@
-package numberFormatterTest;
-
-import java.util.List;
-import java.util.ArrayList;
-
-import org.jetbrains.annotations.NotNull;
-
-import static consoleUtils.stringTools.NumberFormatter.doubleToString;
-
-import consoleUtils.stringTools.SeparatorString;
+package stringToolsTests;
 
 /**
  * Testing text formatter with console buffer.
+ * TODO: rework this
  */
-public class NumberFormatterTest {/*
+public class NumberFormatterTest_old {/*
     private static final String TEST_NAME = "Number formatter test";
 
     private static final ConsoleBuffer consoleBuffer = new ConsoleBuffer() {
