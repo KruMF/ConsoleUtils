@@ -1,6 +1,8 @@
 package bufferedPrintingTests.sections;
 
-//TODO: add javadoc
+/**
+ * An enum for testing various buffer section types.
+ */
 public enum TestSectionType {
     EMPTY,
     LINE_BY_LINE,

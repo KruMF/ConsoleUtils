@@ -10,7 +10,9 @@ import org.jetbrains.annotations.Nullable;
 
 import consoleUtils.bufferedPrinting.BufferSection;
 
-//TODO: add javadocs
+/**
+ * A buffer section for testing console buffers.
+ */
 public class TestSection extends BufferSection {
     private static final @NotNull Map<@NotNull TestSectionType, @NotNull String>
             TEST_SECTION_NAMES = new HashMap<>() {
@@ -25,7 +27,12 @@ public class TestSection extends BufferSection {
     private final @NotNull TestSectionType sectionType;
     private final int numberOfLines;
 
-    //TODO: add javadoc
+    /**
+     * Creates a new console buffer test section with specified parameters.
+     *
+     * @param sectionType   Type of section.
+     * @param numberOfLines Number of lines in this section.
+     */
     public TestSection(@NotNull TestSectionType sectionType, int numberOfLines) {
         super();
         this.sectionType = sectionType;
