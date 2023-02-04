@@ -1,0 +1,15 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SingleSectionBufferTest" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="bufferedPrintingTests.SingleSectionBufferTest" />
+    <module name="ConsoleUtils" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="bufferedPrintingTests.SingleSectionBufferTest" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
