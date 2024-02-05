@@ -12,9 +12,9 @@ by [Krumuvecis](https://github.com/Krumuvecis)
 
 ## Requirements
 
-* JDK: 18
-* Maven compiler: 18
-* [JetBrains Java Annotations](https://mvnrepository.com/artifact/org.jetbrains/annotations) : 24.0.0
+* JDK: 21
+* Maven compiler: 21
+* [JetBrains Java Annotations](https://mvnrepository.com/artifact/org.jetbrains/annotations) : 24.1.0
 
 
 ## Functionality

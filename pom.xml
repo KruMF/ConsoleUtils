@@ -6,14 +6,14 @@
 
     <groupId>com.github.KruMF</groupId>
     <artifactId>ConsoleUtils</artifactId>
-    <version>0.3.2</version>
+    <version>0.3.3</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
 
-        <jetbrains.annotations.version>24.0.0</jetbrains.annotations.version>
+        <jetbrains.annotations.version>24.1.0</jetbrains.annotations.version>
     </properties>
 
     <dependencies>
